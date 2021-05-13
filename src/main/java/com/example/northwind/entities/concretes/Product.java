@@ -23,7 +23,7 @@ public class Product {
 	@Column(name="unit_price")
 	private double unitPrice;
 
-	@Column(name="unit_in_stock")
+	@Column(name="units_in_stock")
 	private short unitsInStock;
 
 	@Column(name="quantity_per_unit")
