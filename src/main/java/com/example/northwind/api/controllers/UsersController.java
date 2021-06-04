@@ -1,5 +1,6 @@
 package com.example.northwind.api.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,6 +17,7 @@ public class UsersController {
 	
 	private UserService userService;
 
+	@Autowired
 	public UsersController(UserService userService) {
 		super();
 		this.userService = userService;

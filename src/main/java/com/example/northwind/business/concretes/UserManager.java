@@ -1,6 +1,7 @@
 package com.example.northwind.business.concretes;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.northwind.business.abstracts.UserService;
 import com.example.northwind.core.dataAccess.UserDao;
@@ -10,6 +11,7 @@ import com.example.northwind.core.utilities.results.Result;
 import com.example.northwind.core.utilities.results.SuccessDataResult;
 import com.example.northwind.core.utilities.results.SuccessResult;
 
+@Service
 public class UserManager implements UserService {
 	
 	private UserDao userDao;
